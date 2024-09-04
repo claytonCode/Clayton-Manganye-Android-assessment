@@ -1,7 +1,9 @@
 package com.glucode.about_you.engineers
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -35,25 +37,28 @@ class EngineersFragment : Fragment() {
         return when (item.itemId) {
             R.id.action_years -> {
                 sortEngineersByYears()
+                showToast("filtered by years")
                 true
             }
             R.id.action_coffees -> {
                 sortEngineersByCoffees()
+                showToast("filtered by coffee")
                 true
             }
             R.id.action_bugs -> {
                 sortEngineersByBugs()
+                showToast("filtered by bugs")
                 true
             }
             else -> super.onOptionsItemSelected(item)
         }
     }
-    // allows sorting to happen based on engineer attributes
-    private fun sortEngineersByName() {
-        engineers = engineers.sortedBy { it.name }
-        updateEngineersList()
+
+    private fun showToast( message:String ){
+        Toast.makeText(context,message, Toast.LENGTH_LONG).show()
     }
 
+    // allows sorting to happen based on engineer attributes
     private fun sortEngineersByYears() {
         engineers = engineers.sortedBy { it.quickStats.years }
         updateEngineersList()
@@ -68,7 +73,8 @@ class EngineersFragment : Fragment() {
         engineers = engineers.sortedBy { it.quickStats.bugs }
         updateEngineersList()
     }
-
+    //updates the engineer list when change happens
+    @SuppressLint("NotifyDataSetChanged")
     private fun updateEngineersList() {
         adapter = EngineersRecyclerViewAdapter(engineers) {
             goToAbout(it)
@@ -76,7 +82,7 @@ class EngineersFragment : Fragment() {
         binding.list.adapter = adapter
         adapter.notifyDataSetChanged()
     }
-
+   //Adapter Setup: Configures the RecyclerView with an adapter that displays the list of engineers and handles item clicks.
     private fun setUpEngineersList(engineers: List<Engineer>) {
         binding.list.adapter = EngineersRecyclerViewAdapter(engineers) {
             goToAbout(it)
@@ -84,7 +90,7 @@ class EngineersFragment : Fragment() {
         val dividerItemDecoration = DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
         binding.list.addItemDecoration(dividerItemDecoration)
     }
-
+    // binds data to the profile fot update engineer info
     private fun goToAbout(engineer: Engineer) {
         val bundle = Bundle().apply {
             putString("name", engineer.name)

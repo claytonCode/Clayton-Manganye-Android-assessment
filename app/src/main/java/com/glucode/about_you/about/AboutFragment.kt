@@ -72,6 +72,7 @@ class AboutFragment : Fragment() {
         setUpQuestions()
     }
 
+    // stores the changed profile image
     override fun onPause() {
         super.onPause()
         val drawable = profileBinding.profileImage.drawable
@@ -80,6 +81,7 @@ class AboutFragment : Fragment() {
         }
     }
 
+    // allows user
     private fun pickImageFromGallery() {
         val intent = Intent(Intent.ACTION_PICK).apply {
             type = "image/*"
