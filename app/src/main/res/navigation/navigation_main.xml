@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/engineersFragment">
+
+    <fragment
+        android:id="@+id/engineersFragment"
+        android:name="com.glucode.about_you.engineers.EngineersFragment"
+        android:label="@string/engineers_screen_title"
+        tools:layout="@layout/fragment_engineers" >
+        <action
+            android:id="@+id/action_engineersFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.glucode.about_you.about.AboutFragment"
+        android:label="@string/about_screen_title"
+        tools:layout="@layout/fragment_about" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+</navigation>

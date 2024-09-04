@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- this file defines the base text styles, 'renamed' from material styles
+
+         in almost all cases they are:
+         - inheriting from a TextAppearance.MaterialComponents.* style
+         - using a similar name as the material style (Material.*)
+         - using text_grey as textColor
+
+        exceptions to this should be noted
+    -->
+
+    <!--Headline-->
+
+    <style name="Material.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="Material.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="Material.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="Material.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="Material.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="Material.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <!--Subtitle-->
+
+    <style name="Material.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="Material.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <!--Body-->
+
+    <style name="Material.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <style name="Material.Body1.Medium" parent="Material.Body1">
+        <!-- a Body1 text, but with increased font weight
+             have to define a medium body weight for the details fields
+             since we want to keep things the same text size and differentiate with font weight -->
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Material.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <!--Button-->
+
+    <style name="Material.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <!--Caption-->
+
+    <style name="Material.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+    <!--Overline-->
+
+    <style name="Material.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <!-- The material sketch file has it at Medium weight
+             we should define a medium weight as well, since the text is quite small and the
+             added weight will help it a bit with extra legibility -->
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+
+</resources>

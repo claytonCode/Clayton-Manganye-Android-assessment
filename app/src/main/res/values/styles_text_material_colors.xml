@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- this file extends the text styles defined in styles_text_material_base by changing the text colors
+         in almost all cases, this adds 3 sub styles:
+         - Light
+         - Dark
+         - Primary
+     -->
+
+    <!--Headline 1-->
+
+    <style name="Material.Headline1.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Headline1.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Headline1.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Headline 2-->
+
+    <style name="Material.Headline2.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Headline2.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Headline2.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Headline 3-->
+
+    <style name="Material.Headline3.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Headline3.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Headline3.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Headline 4-->
+
+    <style name="Material.Headline4.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Headline4.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Headline4.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Headline 5-->
+
+    <style name="Material.Headline5.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Headline5.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Headline5.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Headline 6-->
+
+    <style name="Material.Headline6.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Headline6.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Headline6.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Subtitle 1-->
+
+    <style name="Material.Subtitle1.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Subtitle1.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Subtitle1.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Subtitle 2-->
+
+    <style name="Material.Subtitle2.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Subtitle2.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Subtitle2.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Body 1-->
+
+    <style name="Material.Body1.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Body1.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Body1.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Body 1 (medium)-->
+
+    <style name="Material.Body1.Medium.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Body1.Medium.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Body1.Medium.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Body 2-->
+
+    <style name="Material.Body2.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Body2.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Body2.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Button-->
+
+    <style name="Material.Button.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Button.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Button.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Caption-->
+
+    <style name="Material.Caption.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Caption.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Caption.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <!--Overline-->
+
+    <style name="Material.Overline.Light">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="Material.Overline.Dark">
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="Material.Overline.Primary">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+</resources>

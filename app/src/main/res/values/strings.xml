@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">About-You</string>
+
+    <!--Engineers-->
+    <string name="engineers_screen_title">Engineers at Glucode</string>
+    <string name="engineers_menu_title">Filter by</string>
+    <string name="engineers_menu_years">Years</string>
+    <string name="engineers_menu_coffees">Coffees</string>
+    <string name="engineers_menu_bugs">Bugs</string>
+
+    <!--About-->
+    <string name="about_screen_title">About</string>
+    <string name="name">name</string>
+    <string name="role">role</string>
+    <string name="sort_by_name">Sort by Name</string>
+</resources>

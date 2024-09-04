@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <dimen name="none">0dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="section_height">36dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_extra_large">32dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_extra_tiny">2dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
+    <dimen name="margin_extra_extra_large">38dp</dimen>
+    <dimen name="margin_screen_bottom_offset">100dp</dimen>
+
+    <!-- Corner Radius -->
+    <dimen name="corner_radius_tiny">4dp</dimen>
+    <dimen name="corner_radius_small">6dp</dimen>
+    <dimen name="corner_radius_normal">8dp</dimen>
+    <dimen name="corner_radius_large">10dp</dimen>
+    <dimen name="corner_radius_extra_large">12dp</dimen>
+    <dimen name="corner_radius_extra_extra_large">24dp</dimen>
+
+    <!--Elevation-->
+    <dimen name="elevation_small">2dp</dimen>
+    <dimen name="elevation_normal">4dp</dimen>
+    <dimen name="elevation_large">6dp</dimen>
+</resources>
