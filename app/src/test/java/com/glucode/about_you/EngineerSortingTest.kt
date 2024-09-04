@@ -18,7 +18,7 @@ class EngineersSortingTest {
     fun testSortEngineersByYears() {
         val sortedEngineers = engineers.sortedBy { it.quickStats.years }
         assertEquals(
-            listOf("Reenen", "Stefan", "Henri", "Brandon", "Eben", "Wilmar"),
+            listOf("Reenen", "Stefan", "Brandon", "Henri", "Eben", "Wilmar"),
             sortedEngineers.map { it.name }
         )
     }
@@ -36,7 +36,7 @@ class EngineersSortingTest {
     fun testSortEngineersByBugs() {
         val sortedEngineers = engineers.sortedBy { it.quickStats.bugs }
         assertEquals(
-            listOf("Eben", "Henri", "Stefan", "Wilmar", "Reenen", "Brandon"),
+            listOf("Eben", "Stefan", "Henri", "Reenen", "Wilmar", "Brandon"),
             sortedEngineers.map { it.name }
         )
     }
