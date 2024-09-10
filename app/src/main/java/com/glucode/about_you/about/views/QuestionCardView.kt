@@ -2,6 +2,7 @@ package com.glucode.about_you.about.views
 
 import android.content.Context
 import android.graphics.Color
+import android.graphics.Typeface
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
@@ -66,6 +67,7 @@ class QuestionCardView @JvmOverloads constructor(
                 previousView.isSelected = false
                 previousView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.deep_blue))
                 previousView.binding.title.setTextColor(Color.WHITE)
+                previousView.binding.title.setTypeface(null, Typeface.NORMAL)
             }
             // Select the new answer
             selection = clickedIndex
@@ -73,6 +75,9 @@ class QuestionCardView @JvmOverloads constructor(
             selectedView.isSelected = true
             selectedView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.white))
             selectedView.binding.title.setTextColor(ContextCompat.getColor(context, R.color.deep_blue))
+            //set bold on answer card
+            selectedView.binding.title.setTypeface(null, Typeface.BOLD)
+
         }
     }
 
