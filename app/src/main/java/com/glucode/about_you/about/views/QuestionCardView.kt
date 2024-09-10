@@ -67,7 +67,7 @@ class QuestionCardView @JvmOverloads constructor(
                 previousView.isSelected = false
                 previousView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.deep_blue))
                 previousView.binding.title.setTextColor(Color.WHITE)
-                previousView.binding.title.setTypeface(null, Typeface.NORMAL)
+               previousView.binding.title.setTypeface(null, Typeface.NORMAL)
             }
             // Select the new answer
             selection = clickedIndex
