@@ -45,7 +45,7 @@ class QuestionCardView @JvmOverloads constructor(
     init {
         radius = resources.getDimension(R.dimen.corner_radius_normal)
         elevation = resources.getDimension(R.dimen.elevation_normal)
-        setCardBackgroundColor(ContextCompat.getColor(context, R.color.black))
+        setCardBackgroundColor(ContextCompat.getColor(context, R.color.deep_blue))
     }
 
     private fun addAnswer(title: String) {
@@ -64,7 +64,7 @@ class QuestionCardView @JvmOverloads constructor(
             selection?.let { previousSelection ->
                 val previousView = binding.answers.getChildAt(previousSelection) as AnswerCardView
                 previousView.isSelected = false
-                previousView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.black))
+                previousView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.deep_blue))
                 previousView.binding.title.setTextColor(Color.WHITE)
             }
             // Select the new answer
@@ -72,7 +72,7 @@ class QuestionCardView @JvmOverloads constructor(
             val selectedView = view as AnswerCardView
             selectedView.isSelected = true
             selectedView.setCardBackgroundColor(ContextCompat.getColor(context, R.color.white))
-            selectedView.binding.title.setTextColor(Color.BLACK)
+            selectedView.binding.title.setTextColor(ContextCompat.getColor(context, R.color.deep_blue))
         }
     }
 

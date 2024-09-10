@@ -5,6 +5,8 @@
         android:id="@+id/file"
         android:icon="@drawable/ic_filter"
         android:title="@string/engineers_menu_title"
+        app:dividerPadding="0dp"
+        app:showDividers="beginning|middle|end"
         app:showAsAction="ifRoom">
 
         <menu>
